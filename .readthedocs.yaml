@@ -1,0 +1,11 @@
+version: 2
+build:
+  os: 'ubuntu-22.04'
+  tools:
+    nodejs: '16'
+  jobs:
+    post_install:
+      # Install dependencies defined in your ``package.json``
+      - yarn install
+      # Install any other extra dependencies to build the docs
+      - npm build:storybook
