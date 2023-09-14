@@ -8,4 +8,6 @@ build:
     - yarn
     - yarn build:storybook
     - mkdir -p $READTHEDOCS_OUTPUT/html/
+    - ls packages/core/docs
     - cp -r packages/core/docs/ $READTHEDOCS_OUTPUT/html/
+    - ls $READTHEDOCS_OUTPUT/html/
