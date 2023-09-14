@@ -4,6 +4,7 @@ build:
   tools:
     nodejs: '16'
   commands:
+    - npm install -g yarn
     - yarn install
     - npm build:storybook
     - mkdir -p $READTHEDOCS_OUTPUT/html/
