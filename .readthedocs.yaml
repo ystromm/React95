@@ -5,7 +5,7 @@ build:
     nodejs: '16'
   commands:
     - npm install -g yarn
-    - yarn 
+    - yarn
     - yarn build:storybook
     - mkdir -p $READTHEDOCS_OUTPUT/html/
-    - cp -r packages/core/docs $READTHEDOCS_OUTPUT/html/
+    - cp -r packages/core/docs/ $READTHEDOCS_OUTPUT/html/
